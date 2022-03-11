@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel planet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-container {
+            margin: 10px;
+            padding: 10px;
+            background-color: dodgerblue;
+        }
+        #logo {
+            width: 200px;
+            background-color: beige;
+            float: left;
+            border: 1px solid blue;
+        }
+        .nav {
+            background-color: #999;
+            padding: 15px;
+        }
+        ul {
+            width: 500px;
+            background-color:blanchedalmond ;
+            list-style-type: none;
+            overflow: hidden;
+            padding: 10px 50px;
+            float: right; 
+            border: 1px solid blue;
+        }
+        li {
+            padding: 15px;
+            float: right;
+        }
+        li a, div a {
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .main-content {
+            background-color: #bbb;
+            margin: 10px 0;
+            padding: 15px;
+        }
+        .left-aside, .right-aside {
+            background-color: #eee;
+            border: 1px solid blue;
+            width: 49%;
+            float: left;
+        }
+        p {
+            background-color: #def;
+            border: 1px solid blue;
+            margin: 5px;
+            float: left;
+            width: 70%;
+        }
+        #banana, #palms {
+            border: 1px solid blue;
+            float: right;
+            width: 70%;
+            margin: 5px;
+        }
+        img {
+            width: 100%;
+        }
+        .footer {
+            background-color: #777;
+            padding: 15px; 
+        }
+        .left-btm, .right-btm {
+            border: 1px solid blue;
+            width: 40%;
+            height: 300px;
+            float: left;
+            padding: 30px;
+            background-color: #dbc;
+        }
+        h3, h1, h6 {
+            text-transform: capitalize;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .right-btm {
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.3)), url('./sunglasses.png') center;
+        }
+        .subscribe {
+            border: 1px solid purple;
+            padding: 10px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <nav class=" nav clearfix" >
+            <div id="logo">
+            <img src="./logo.png" alt="logo">
+            </div>
+            <ul>
+             <li><a href="#">our trips</a></li>
+             <li><a href="#">about us</a></li>
+             <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <main class="main-content clearfix">
+            <div class="left-aside">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde velit quaerat voluptates aliquam autem commodi provident praesentium inventore placeat ullam, corrupti quo dignissimos ducimus.</p>
+                <div id="banana">
+                   <img src="./crop-banana.png" alt="banana with sunglasses">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia, sapiente obcaecati quo dicta mollitia sunt magnam qui suscipit harum soluta exercitationem quisquam explicabo autem saepe? Earum quam fugit nostrum.</p>
+            </div>
+            <div class="right-aside" style="float: right;">
+                <div id="palms">
+                    <img src="./palms.png" alt="palms">
+                </div>
+                <p style="width: 47%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi perferendis unde tenetur iusto accusantium temporibus magni culpa est dignissimos eos.</p>
+                <p style="width: 47%; float: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consequatur.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci repudiandae asperiores beatae voluptate consequuntur praesentium ut iusto molestias eius aut?</p>
+            </div>
+        </main>
+        <div class="footer clearfix">
+            <div class="left-btm clearfix">
+                <a href="#"><h3>upcoming trips</h3></a>
+                <div style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, debitis? Eaque dolorem id ex, expedita tenetur, ea alias, praesentium dolores esse vel inventore aliquid aspernatur?
+                </div>
+                <a href="#" style="text-transform: capitalize;">More for travelers</a>
+            </div>
+            <div class="right-btm" style="float: right">
+                <a href="#"><h1>all trips</h1></a>
+                <a href="#"><h3>most popular trips</h3></a>
+                <h6>><a href="#" class="subscribe">subscribe us</a></h6>
+            </div>
+        </div>
+    </div>
+</body>
+</html>>
