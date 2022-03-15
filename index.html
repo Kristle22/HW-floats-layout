@@ -12,58 +12,70 @@
             box-sizing: border-box;
         }
         .main-container {
-            margin: 10px;
-            padding: 10px;
+            border: 4px solid blue;
             background-color: dodgerblue;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 3%;
+            display: inline-block;
         }
         #logo {
-            width: 200px;
+            width: 20%;
+            height:60px;
             background-color: beige;
             float: left;
-            border: 1px solid blue;
+            border: 2px solid blue;
         }
         .nav {
             background-color: #999;
-            padding: 15px;
+            padding: 5px;
+            border: 3px solid red;
+            width: 100%;
+            float: left;
         }
+         /* .clearfix::after {
+            content: "";
+            clear: both;
+            display: table; 
+            }*/
         ul {
-            width: 500px;
             background-color:blanchedalmond ;
             list-style-type: none;
             overflow: hidden;
-            padding: 10px 50px;
+        }
+        .links {
+            border: 2px solid blue;
+            width: 50%;
+            height: 60px;
             float: right; 
-            border: 1px solid blue;
         }
         li {
-            padding: 15px;
-            float: right;
+            padding: 16px 10px;
+            float: left;
         }
         li a, div a {
             font-size: 20px;
             text-decoration: none;
             text-transform: uppercase;
         }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
         .main-content {
             background-color: #bbb;
-            margin: 10px 0;
-            padding: 15px;
+            border: 3px solid red;
+            padding: 5px;
+            /* display: inline-block;
+            width: 100%; */
+            float: left;
         }
         .left-aside, .right-aside {
             background-color: #eee;
-            border: 1px solid blue;
-            width: 49%;
+            border: 2px solid blue;
+            width: 50%;
             float: left;
+            height: 360px;
         }
         p {
             background-color: #def;
             border: 1px solid blue;
-            margin: 5px;
             float: left;
             width: 70%;
         }
@@ -71,18 +83,18 @@
             border: 1px solid blue;
             float: right;
             width: 70%;
-            margin: 5px;
-        }
-        img {
-            width: 100%;
         }
         .footer {
             background-color: #777;
-            padding: 15px; 
+            border: 3px solid red;
+            padding: 5px;
+            /* display: inline-block;
+            width: 100%; */
+            float: left;
         }
         .left-btm, .right-btm {
-            border: 1px solid blue;
-            width: 40%;
+            border: 2px solid blue;
+            width: 35%;
             height: 300px;
             float: left;
             padding: 30px;
@@ -91,7 +103,7 @@
         h3, h1, h6 {
             text-transform: capitalize;
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
         .right-btm {
@@ -107,36 +119,32 @@
 <body>
     <div class="main-container">
         <nav class=" nav clearfix" >
-            <div id="logo">
-            <img src="./logo.png" alt="logo">
+            <img id="logo" src="./logo.png" alt="logo">
+            <div class="links">
+                <ul>
+                <li><a href="#">our trips</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact</a></li>
+                </ul>
             </div>
-            <ul>
-             <li><a href="#">our trips</a></li>
-             <li><a href="#">about us</a></li>
-             <li><a href="#">contact</a></li>
-            </ul>
         </nav>
         <main class="main-content clearfix">
             <div class="left-aside">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde velit quaerat voluptates aliquam autem commodi provident praesentium inventore placeat ullam, corrupti quo dignissimos ducimus.</p>
-                <div id="banana">
-                   <img src="./crop-banana.png" alt="banana with sunglasses">
-                </div>
+                   <img id="banana" src="./crop-banana.png" alt="banana with sunglasses">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia, sapiente obcaecati quo dicta mollitia sunt magnam qui suscipit harum soluta exercitationem quisquam explicabo autem saepe? Earum quam fugit nostrum.</p>
             </div>
             <div class="right-aside" style="float: right;">
-                <div id="palms">
-                    <img src="./palms.png" alt="palms">
-                </div>
-                <p style="width: 47%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi perferendis unde tenetur iusto accusantium temporibus magni culpa est dignissimos eos.</p>
-                <p style="width: 47%; float: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consequatur.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci repudiandae asperiores beatae voluptate consequuntur praesentium ut iusto molestias eius aut?</p>
+                <img id="palms" src="./palms.png" alt="palms">
+                <p style="width: 50%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi perferendis unde tenetur iusto accusantium temporibus magni culpa est dignissimos eos.</p>
+                <p style="width: 50%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eos doloremque impedit, sapiente nisi molestias.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi libero labore. Nostrum recusandae illum doloribus nihil ratione, quas, voluptate aut quibusdam fugit soluta qui?</p>
             </div>
         </main>
         <div class="footer clearfix">
             <div class="left-btm clearfix">
                 <a href="#"><h3>upcoming trips</h3></a>
-                <div style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, debitis? Eaque dolorem id ex, expedita tenetur, ea alias, praesentium dolores esse vel inventore aliquid aspernatur?
+                <div style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, provident facere dicta animi rerum qui. Neque aspernatur animi tempore dolorem.
                 </div>
                 <a href="#" style="text-transform: capitalize;">More for travelers</a>
             </div>
