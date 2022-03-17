@@ -1,3 +1,5 @@
+![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+
 # 1-Homework: web page layout
 
 _35 group website project_
@@ -9,8 +11,9 @@ Site published at: https://Kristle22.github.io/Homework-1
 ## Project features
 
 -   Github pages
--   CSS
+-   CSS (floats & inline-block)
 -   HTML
+-   favicon
 
 ## Authors
 
