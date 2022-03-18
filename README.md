@@ -6,7 +6,7 @@ _35 group website project_
 
 This is homework project on practicing CSS floats & inline-block features.
 
-Site published at: https://Kristle22.github.io/Homework-1
+Site published at: https://Kristle22.github.io/HW-floats-layout
 
 ## Project features
 
