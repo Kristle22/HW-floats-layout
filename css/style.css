@@ -46,9 +46,17 @@ li {
     float: left;
 }
 li > a, div a {
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    color: #333;
+}
+a:hover {
+    background-color: #def;
+    border: 2px solid #dbc;
+    padding: 10px;
+    border-radius: 18px;
 }
 .main-content {
     background-color: #bbb;
@@ -80,8 +88,8 @@ p {
     background-color: #777;
     border: 3px solid red;
     padding: 5px;
-    /* display: inline-block;
-    width: 100%; */
+    /* display: inline-block;*/
+    width: 100%;
     float: left;
 }
 .left-btm, .right-btm {
@@ -95,8 +103,13 @@ p {
 h3, h4 {
     text-transform: capitalize;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 10px;
+    padding: 5px 10px;
     text-align: center;
+}
+h3:hover,
+h4:hover {
+    color: #13566dff;
+    font-size: 22px;
 }
 h4 {
     margin-bottom: 40px;
