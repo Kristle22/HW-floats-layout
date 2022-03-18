@@ -42,11 +42,11 @@ ul {
     float: right; 
 }
 li {
-    padding: 16px 10px;
+    padding: 16px 50px;
     float: left;
 }
 li > a, div a {
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -111,7 +111,7 @@ h6 {
     text-transform: capitalize;
 }
 .right-btm {
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.3)), url(/img/sunglasses.png) center;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.3)), url('../img/sunglasses.png') center;
 }
 .subscribe {
     border: 1px solid purple;
