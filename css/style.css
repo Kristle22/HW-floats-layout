@@ -1,133 +1,164 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .main-container {
-    border: 4px solid blue;
-    background-color: dodgerblue;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 3%;
-    display: inline-block;
+  border: 4px solid blue;
+  background-color: dodgerblue;
+  width: 80%;
+  margin: 3% 10%;
+  display: inline-block;
 }
 #logo {
-    width: 20%;
-    height:60px;
-    background-color: beige;
-    float: left;
-    border: 2px solid blue;
+  width: 20%;
+  min-width: fit-content;
+  height: 60px;
+  background-color: beige;
+  float: left;
+  border: 2px solid blue;
+  object-fit: contain;
 }
 .nav {
-    background-color: #999;
-    padding: 5px;
-    border: 3px solid red;
-    width: 100%;
-    float: left;
+  background-color: #999;
+  padding: 5px;
+  border: 3px solid red;
+  width: 100%;
+  float: left;
 }
- /* .clearfix::after {
+/* .clearfix::after {
     content: "";
     clear: both;
     display: table; 
     }*/
-ul {
-    list-style-type: none;
-    overflow: hidden;
+.links ul {
+  list-style-type: none;
+  /* overflow: hidden; */
+  display: flex;
+  gap: 40px;
 }
 .links {
-    background-color:blanchedalmond ;
-    border: 2px solid blue;
-    width: 50%;
-    height: 60px;
-    float: right; 
+  display: flex;
+  align-items: center;
+  background-color: blanchedalmond;
+  border: 2px solid blue;
+  height: 60px;
+  min-width: 50%;
+  padding: 5px;
+  float: right;
 }
 li {
-    padding: 16px 50px;
-    float: left;
+  /* padding: 16px 50px; */
+  float: left;
 }
-li > a, div a {
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #333;
+li > a,
+div a {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
 }
 a:hover {
-    background-color: #def;
-    border: 2px solid #dbc;
-    padding: 10px;
-    border-radius: 18px;
+  background-color: #def;
+  border-bottom: 2px solid #dbc;
 }
 .main-content {
-    background-color: #bbb;
-    border: 3px solid red;
-    padding: 5px;
-    /* display: inline-block;
+  background-color: #bbb;
+  border: 3px solid red;
+  padding: 5px;
+  /* display: inline-block;
     width: 100%; */
-    float: left;
+  float: left;
 }
-.left-aside, .right-aside {
-    background-color: #eee;
-    border: 2px solid blue;
-    width: 50%;
-    float: left;
-    height: 360px;
+.left-aside,
+.right-aside {
+  background-color: #eee;
+  border: 2px solid blue;
+  width: 50%;
+  float: left;
+  height: fit-content;
 }
 p {
-    background-color: #def;
-    border: 1px solid blue;
-    float: left;
-    width: 70%;
+  background-color: #def;
+  border: 1px solid blue;
+  float: left;
+  min-width: 70%;
 }
-#banana, #palms {
-    border: 1px solid blue;
-    float: right;
-    width: 70%;
+#banana,
+#palms {
+  border: 1px solid blue;
+  float: right;
+  width: 70%;
+  max-width: 300px;
 }
 .footer {
-    background-color: #777;
-    border: 3px solid red;
-    padding: 5px;
-    /* display: inline-block;*/
-    width: 100%;
-    float: left;
+  background-color: #777;
+  border: 3px solid red;
+  padding: 5px;
+  /* display: inline-block;*/
+  width: 100%;
+  float: left;
 }
-.left-btm, .right-btm {
-    border: 2px solid blue;
-    width: 35%;
-    height: 300px;
-    float: left;
-    padding: 30px;
-    background-color: #dbc;
+.left-btm,
+.right-btm {
+  border: 2px solid blue;
+  width: 35%;
+  height: fit-content;
+  float: left;
+  padding: 30px 15px;
+  background-color: #dbc;
 }
-h3, h4 {
-    text-transform: capitalize;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 5px 10px;
-    text-align: center;
+h3,
+h4 {
+  text-transform: capitalize;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 5px 10px;
+  text-align: center;
 }
-h3:hover,
-h4:hover {
-    color: #13566dff;
-    font-size: 22px;
+.left-btm h3:hover,
+.right-btm h3:hover {
+  color: #13566dff;
+  font-size: 22px;
+  padding: 2.5px;
+}
+
+.right-btm h4:hover {
+  color: #13566dff;
+  font-size: 19px;
+  padding: 2.5px;
 }
 h4 {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 h6 {
-    text-align: center;
+  text-align: center;
 }
 .left-btm > div {
-    font-size: 18px;
+  font-size: 18px;
 }
 .left-btm > a {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .right-btm {
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.3)), url('../img/sunglasses.png') center;
+  padding: 30px 0;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url('../img/sunglasses.png') center;
 }
 .subscribe {
-    border: 1px solid purple;
-    padding: 8px;
-    border-radius: 30px;
+  border: 1px solid purple;
+  padding: 8px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  .left-btm,
+  .right-btm,
+  .left-aside,
+  .right-aside {
+    width: 100%;
+  }
 }
